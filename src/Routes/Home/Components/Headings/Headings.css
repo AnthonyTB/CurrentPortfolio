@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.Heading {
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+}
+
+.Heading h1 {
+  margin: 0;
+  writing-mode: vertical-lr;
+  transform: scale(1, -1);
+}
