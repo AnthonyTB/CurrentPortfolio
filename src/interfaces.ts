@@ -1,9 +1,10 @@
 export interface Project {
+  Id: number;
   Title: string;
   Links: ProjectLinks;
   UserDescription: string;
   CreatorDescription: string;
-  Image: string;
+  Images: string[];
   Tags: string[];
 }
 
@@ -14,4 +15,9 @@ export interface ProjectLinks {
 
 export interface HeadingProp {
   Heading: string;
+}
+
+export interface SelectMenuProp {
+  MenuOptions: any[];
+  ValueUpdater: any;
 }

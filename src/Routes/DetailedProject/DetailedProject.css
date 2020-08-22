@@ -1,0 +1,128 @@
+.DetailedProject {
+}
+
+.DetailedProject .content {
+  width: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.DetailedProject .content .Tags {
+  padding: 0;
+  list-style: none;
+}
+
+.DetailedProject .content .Tags li {
+  display: inline;
+  margin-right: 10px;
+  color: #fff;
+  font-family: 'Roboto';
+  background: #2e2e2e;
+  padding: 3px 7px;
+  border-radius: 15px;
+}
+
+.DetailedProject .content .Tags li:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.DetailedProject .content h1 {
+  font-family: 'Roboto';
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.DetailedProject .content h3 {
+  color: #2e2e2e;
+  font-family: 'Roboto';
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.DetailedProject .content p {
+  color: #fff;
+  font-family: 'Roboto';
+  margin-top: 0px;
+}
+
+.DetailedProject .content .Creation {
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .DetailedProject .content {
+    width: 500px;
+  }
+
+  .DetailedProject .content h1 {
+    font-size: 35px;
+  }
+
+  .DetailedProject .content h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .DetailedProject .content p {
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .DetailedProject .content {
+    width: 700px;
+  }
+
+  .DetailedProject .content h1 {
+    font-size: 45px;
+  }
+
+  .DetailedProject .content h3 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .DetailedProject .content p {
+    font-size: 25px;
+  }
+
+  .DetailedProject .content .Tags li {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-device-width: 1025px) {
+  .DetailedProject .content {
+    width: 700px;
+  }
+
+  .DetailedProject .content h1 {
+    font-size: 45px;
+  }
+
+  .DetailedProject .content h3 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .DetailedProject .content .Tags li {
+    font-size: 20px;
+  }
+
+  .DetailedProject .content p {
+    font-size: 20px;
+  }
+
+  .DetailedProject .content .Creation {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+}
+
+@media screen and (min-device-width: 1500px) {
+}
+
+@media screen and (min-device-width: 1800px) {
+}

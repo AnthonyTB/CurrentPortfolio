@@ -6,7 +6,6 @@ export const Helpers = {
       method: 'GET',
       headers: {
         'content-type': 'application/json',
-        Authorization: `Bearer`,
       },
     }).then((res) =>
       !res.ok ? res.json().then((err) => Promise.reject(err)) : res.json()
