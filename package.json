@@ -27,7 +27,7 @@
   "scripts": {
     "deploy": "npm run build && now ./build --name=anthonytb",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
