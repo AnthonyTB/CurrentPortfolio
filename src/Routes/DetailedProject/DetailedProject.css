@@ -1,4 +1,11 @@
 .DetailedProject {
+  position: relative;
+}
+
+.DetailedProject .return {
+  position: fixed;
+  top: 10px;
+  left: 6px;
 }
 
 .DetailedProject .content {
@@ -50,7 +57,29 @@
   margin-bottom: 50px;
 }
 
+.DetailedProject .content .Link-Btns a {
+  text-decoration: none;
+  color: #2e2e2e;
+  padding: 3px 7px;
+  background: #fff;
+  border-radius: 15px;
+  margin-right: 10px;
+  box-shadow: 0px 11px 21px -8px rgba(0, 0, 0, 0.5);
+}
+
+.DetailedProject .content .Link-Btns span {
+  margin-left: 5px;
+  font-family: 'Roboto';
+  font-weight: 900;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .DetailedProject .return {
+    height: auto;
+    width: 36px;
+    left: 20px;
+  }
+
   .DetailedProject .content {
     width: 500px;
   }
@@ -69,6 +98,12 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .DetailedProject .return {
+    height: auto;
+    width: 46px;
+    left: 20px;
+  }
+
   .DetailedProject .content {
     width: 700px;
   }
@@ -89,9 +124,19 @@
   .DetailedProject .content .Tags li {
     font-size: 25px;
   }
+
+  .DetailedProject .content .Link-Btns a {
+    font-size: 25px;
+  }
 }
 
 @media screen and (min-device-width: 1025px) {
+  .DetailedProject .return {
+    height: auto;
+    width: 46px;
+    left: 20px;
+  }
+
   .DetailedProject .content {
     width: 700px;
   }

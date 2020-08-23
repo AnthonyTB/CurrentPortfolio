@@ -10,10 +10,10 @@ const AboutMe: React.FC<any> = () => {
   };
 
   const SocialLinks = [
-    { Icon: 'fab fa-twitter', Link: '' },
-    { Icon: 'fab fa-github', Link: '' },
-    { Icon: 'fab fa-linkedin', Link: '' },
-    { Icon: 'far fa-envelope', Link: '' },
+    { Icon: 'fab fa-twitter', Link: 'https://twitter.com/Anthony_Bostic' },
+    { Icon: 'fab fa-github', Link: 'https://github.com/AnthonyTB' },
+    { Icon: 'fab fa-linkedin', Link: 'https://www.linkedin.com/in/anthonytb/' },
+    { Icon: 'far fa-envelope', Link: 'mailto:anthonytb97@gmail.com' },
   ];
 
   return (
@@ -27,16 +27,17 @@ const AboutMe: React.FC<any> = () => {
         <HeadingProp {...Heading} />
         <div className='container'>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
+            I started learning web development in early 2018, after going to
+            school and practicing in my free time. After building static
+            websites for a year, I decided to take my interest to the next level
+            and join a coding boot camp to learn more and learn how to work as a
+            team with other developers. Now a little bit about me as a person
+            outside of developing. I was born in Indiana but lived most of my
+            life in Florida then moved to Washington in 2019. Therefore I am a
+            big fan of the Colts & Seahawks. I also love playing video games
+            mostly first-person shooters because I grew up on great games like
+            Halo and Call of Duty. I also spend a lot of my time on Medium
+            reading up on the latest framework updates.
           </p>
           <img src={Dots} alt='dots' />
           <ul>

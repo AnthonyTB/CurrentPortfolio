@@ -25,6 +25,7 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "deploy": "npm run build && now ./build --name=anthonytb",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

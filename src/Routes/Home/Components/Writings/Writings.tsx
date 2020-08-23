@@ -44,7 +44,7 @@ const Writings: React.FC<any> = () => {
         <ul>
           {List.map((Post: any, Idx: number) => {
             return (
-              <li key={Idx}>
+              <li key={Idx} className='animate__animated animate__bounceInUp'>
                 <a href={Post.link} target='blank_'>
                   <div
                     className='Post__image'
