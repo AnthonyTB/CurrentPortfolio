@@ -26,7 +26,6 @@ const SelectMenu: React.FC<any> = (props: SelectMenuProp) => {
   };
 
   const classes = useStyles();
-  console.log(props);
   return (
     <>
       <FormControl className={classes.formControl}>
