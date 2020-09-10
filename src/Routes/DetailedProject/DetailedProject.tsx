@@ -8,6 +8,7 @@ import { scrollToTop } from '../../Components/ScrollToTop';
 import { ProjectLinks } from '../../interfaces';
 import Return from '../../Assets/arrow.svg';
 import { Link } from 'react-router-dom';
+import {Boundary} from '../'
 
 const DetailedProject: React.FC<any> = (props: any) => {
   useEffect(() => {
@@ -16,9 +17,13 @@ const DetailedProject: React.FC<any> = (props: any) => {
 
   const project = Projects.filter(
     (Project: Project) =>
-      Project.Title ===
-      props.match.params.name.replace(/([a-z])([A-Z])/g, '$1 $2').trim()
+      Project.Title.toLowerCase() ===
+      props.match.params.name.replace(/-/g,' ').toLowerCase()
   )[0];
+
+  if (!project) {
+    return <Boundary />
+  }
 
   return (
     <section className='DetailedProject'>

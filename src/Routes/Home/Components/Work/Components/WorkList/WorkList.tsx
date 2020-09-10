@@ -16,7 +16,7 @@ const WorkList: React.FC<any> = (props: ListProp) => {
             key={Project.Id}
             className='Project animate__animated animate__bounceInUp'
           >
-            <Link to={`/project/${Project.Title.replace(/ +/g, '')}`}>
+            <Link to={`/project/${Project.Title.replace(/ +/g, '-')}`}>
               <div
                 className='Project__image'
                 style={{

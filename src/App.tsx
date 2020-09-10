@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Switch, Route, RouteComponentProps } from 'react-router-dom';
 import './App.css';
-import { Home, DetailedProject } from './Routes/';
+import { Home, DetailedProject, Boundary } from './Routes/';
 import { Context } from './Components/Context';
 import Footer from './Components/Footer/Footer';
 import { css } from '@emotion/core';
@@ -50,6 +50,7 @@ const App: React.FC = () => {
                 <DetailedProject {...routeProps} />
               )}
             />
+            <Boundary />
           </Switch>
           <Footer />
         </>

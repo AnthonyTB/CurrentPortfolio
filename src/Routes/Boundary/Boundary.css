@@ -1,0 +1,9 @@
+.Boundary {
+    height: 60vh;
+    text-align: center;
+    color: #fff;
+}
+
+.Boundary h2 a {
+    color: blue;
+}
