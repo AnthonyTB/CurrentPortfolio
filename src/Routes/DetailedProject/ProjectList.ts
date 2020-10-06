@@ -1,6 +1,6 @@
-import { Project } from "../../interfaces";
+import { IProject } from "../../interfaces";
 
-export const Projects: Project[] = [
+export const Projects: IProject[] = [
   {
     Id: 1,
     Title: "Smart Marketplace",

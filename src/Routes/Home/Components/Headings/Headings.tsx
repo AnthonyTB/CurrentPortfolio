@@ -1,10 +1,10 @@
-import React from 'react';
-import './Headings.css';
-import { HeadingProp } from '../../../../interfaces';
+import React from "react";
+import "./Headings.css";
+import { IHeadingProp } from "../../../../interfaces";
 
-const Heading: React.FC<any> = (props: HeadingProp) => {
+const Heading: React.FC<any> = (props: IHeadingProp) => {
   return (
-    <div className='Heading'>
+    <div className="Heading">
       <h1>{props.Heading}</h1>
     </div>
   );

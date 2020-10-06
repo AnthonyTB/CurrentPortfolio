@@ -1,23 +1,24 @@
-export interface Project {
+export interface IProject {
   Id: number;
   Title: string;
-  Links: ProjectLinks[];
+  Links: IProjectLinks[];
   UserDescription: string;
   CreatorDescription: string;
   Images: string[];
   Tags: string[];
 }
 
-export interface HeadingProp {
+export interface IHeadingProp {
   Heading: string;
 }
 
-export interface SelectMenuProp {
-  MenuOptions: any[];
+export interface ISelectMenuProp {
+  MenuOptions: string[];
+  Label: string;
   ValueUpdater: any;
 }
 
-export interface ProjectLinks {
+export interface IProjectLinks {
   Link: string;
   Title: string;
   Icon: string;

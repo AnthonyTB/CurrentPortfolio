@@ -1,16 +1,17 @@
-import React, { useState, useContext } from 'react';
-import './Writings.css';
-import Heading from '../Headings/Headings';
-import { Context } from '../../../../Components/Context';
-import { SelectMenu } from '../index';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React, { useState, useContext } from "react";
+import "./Writings.css";
+import Heading from "../Headings/Headings";
+import { Context } from "../../../../Components/Context";
+import { SelectMenu } from "../index";
+import ScrollAnimation from "react-animate-on-scroll";
+import { Loader } from "../../../../Components";
 
 const Writings: React.FC<any> = () => {
   const [List, setList] = useState(null);
   const { mediumData } = useContext(Context);
 
   const HeadingProp = {
-    Heading: 'Writings',
+    Heading: "Writings",
   };
 
   const SelectMenuValue = (value: string) => {
@@ -21,7 +22,7 @@ const Writings: React.FC<any> = () => {
   };
 
   const renderSelectMenu = () => {
-    const possibleCategory: any[] = [''];
+    const possibleCategory: any[] = [""];
     mediumData.items.map((Post: any) => {
       return Post.categories.filter((Category: string) => {
         if (!possibleCategory.includes(Category)) {
@@ -32,6 +33,7 @@ const Writings: React.FC<any> = () => {
 
     return (
       <SelectMenu
+        Label={"Writing"}
         MenuOptions={possibleCategory}
         ValueUpdater={SelectMenuValue}
       />
@@ -40,19 +42,19 @@ const Writings: React.FC<any> = () => {
 
   const renderPostList = (List: any) => {
     return (
-      <div className='PostList'>
+      <div className="PostList">
         <ul>
           {List.map((Post: any, Idx: number) => {
             return (
-              <li key={Idx} className='animate__animated animate__bounceInUp'>
-                <a href={Post.link} target='blank_'>
+              <li key={Idx} className="animate__animated animate__bounceInUp">
+                <a href={Post.link} target="blank_">
                   <div
-                    className='Post__image'
+                    className="Post__image"
                     style={{
                       backgroundImage: `url(${Post.thumbnail})`,
                     }}
                   />
-                  <h2 className='Post__heading'>{Post.title}</h2>
+                  <h2 className="Post__heading">{Post.title}</h2>
                 </a>
               </li>
             );
@@ -64,16 +66,19 @@ const Writings: React.FC<any> = () => {
 
   return (
     <ScrollAnimation
-      animateIn='fadeIn'
-      animateOut='fadeOut'
+      animateIn="fadeIn"
+      animateOut="fadeOut"
       duration={1.5}
       delay={1}
     >
-      <section className='Writings'>
+      <section className="Writings">
         <Heading {...HeadingProp} />
-        <div className='container'>
-          <h3>view my articles about {renderSelectMenu()}</h3>
-          {List ? renderPostList(List) : ''}
+        <div className="container">
+          <h3>
+            view my articles about{" "}
+            {mediumData ? renderSelectMenu() : <Loader color={"#fff"} />}
+          </h3>
+          {mediumData && List ? renderPostList(List) : ""}
         </div>
       </section>
     </ScrollAnimation>

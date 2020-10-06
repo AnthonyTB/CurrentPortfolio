@@ -1,31 +1,31 @@
-import React from 'react';
-import './AboutMe.css';
-import HeadingProp from '../Headings/Headings';
-import Dots from '../../../../Assets/dot.svg';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React from "react";
+import "./AboutMe.css";
+import HeadingProp from "../Headings/Headings";
+import Dots from "../../../../Assets/dot.svg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const AboutMe: React.FC<any> = () => {
   const Heading = {
-    Heading: 'About Me',
+    Heading: "About Me",
   };
 
   const SocialLinks = [
-    { Icon: 'fab fa-twitter', Link: 'https://twitter.com/Anthony_Bostic' },
-    { Icon: 'fab fa-github', Link: 'https://github.com/AnthonyTB' },
-    { Icon: 'fab fa-linkedin', Link: 'https://www.linkedin.com/in/anthonytb/' },
-    { Icon: 'far fa-envelope', Link: 'mailto:anthonytb97@gmail.com' },
+    { Icon: "fab fa-twitter", Link: "https://twitter.com/Anthony_Bostic" },
+    { Icon: "fab fa-github", Link: "https://github.com/AnthonyTB" },
+    { Icon: "fab fa-linkedin", Link: "https://www.linkedin.com/in/anthonytb/" },
+    { Icon: "far fa-envelope", Link: "mailto:anthonytb97@gmail.com" },
   ];
 
   return (
     <ScrollAnimation
-      animateIn='fadeIn'
-      animateOut='fadeOut'
+      animateIn="fadeIn"
+      animateOut="fadeOut"
       duration={1.5}
       delay={1}
     >
-      <section className='AboutMe'>
+      <section className="AboutMe">
         <HeadingProp {...Heading} />
-        <div className='container'>
+        <div className="container">
           <p>
             I started learning web development in early 2018, after going to
             school and practicing in my free time. After building static
@@ -39,11 +39,11 @@ const AboutMe: React.FC<any> = () => {
             Halo and Call of Duty. I also spend a lot of my time on Medium
             reading up on the latest framework updates.
           </p>
-          <img src={Dots} alt='dots' />
+          <img src={Dots} alt="dots" />
           <ul>
-            {SocialLinks.map((Icon) => (
-              <li>
-                <a href={Icon.Link} target='blank_'>
+            {SocialLinks.map((Icon, Idx: number) => (
+              <li key={`Social Link ${Idx}`}>
+                <a href={Icon.Link} target="blank_">
                   {<i className={`${Icon.Icon}`}></i>}
                 </a>
               </li>
