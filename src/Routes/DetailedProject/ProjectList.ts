@@ -26,6 +26,7 @@ export const Projects: IProject[] = [
       "https://i.gyazo.com/060f4642ae8741fca6d5023778fe3731.png",
       "https://i.gyazo.com/f0696bc437ae778f12655adbb5d0291a.png",
     ],
+    Url: "/project/Smart-Marketplace",
     Tags: ["School", "React", "NodeJS", "PostgreSQL"],
   },
   {
@@ -50,6 +51,7 @@ export const Projects: IProject[] = [
       "https://i.gyazo.com/50664bcba871399b6bc0833e4dddab93.png",
       "https://i.gyazo.com/26d0b6b730df03b1c722ec2786e916e1.png",
     ],
+    Url: "/project/Lyric-Hunter",
     Tags: ["School", "React"],
   },
   {
@@ -71,6 +73,7 @@ export const Projects: IProject[] = [
       "https://i.gyazo.com/570bb44ae85dd5102c76ed4e14aa15ce.png",
       "https://i.gyazo.com/c955ea088cfa9818a3bedb348c7009ee.png",
     ],
+    Url: "/project/Code-Ninjas",
     Tags: ["Personal", "React", "NodeJS", "PostgreSQL"],
   },
   {
@@ -91,6 +94,7 @@ export const Projects: IProject[] = [
       "https://i.gyazo.com/0bfc32d1fa051d2451ea4199f5f404fb.png",
       "https://i.gyazo.com/1b46af5e63e2a2c4caf08d6d75eba366.jpg",
     ],
+    Url: "/project/Rogue",
     Tags: ["Personal", "React"],
   },
   {
@@ -111,6 +115,7 @@ export const Projects: IProject[] = [
       "https://i.gyazo.com/b1a9d3fcfa2d9c2fcf4aa6330dbcb7b6.png",
       "https://i.gyazo.com/48715e66baa98e25a7d4d984954c0962.png",
     ],
+    Url: "/project/PVPX",
     Tags: ["Personal", "React"],
   },
   {
@@ -134,6 +139,7 @@ export const Projects: IProject[] = [
       "https://i.gyazo.com/22e739667101551f9641e1de1f842510.png",
       "https://i.gyazo.com/51f11b67aebab80b19cd0959e51c1e6e.png",
     ],
+    Url: "/project/Meta-Threads-Web-Scrapper",
     Tags: ["Personal", "NodeJS", "Web Scraping"],
   },
 ];

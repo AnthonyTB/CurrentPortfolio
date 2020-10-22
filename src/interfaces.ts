@@ -1,11 +1,24 @@
 export interface IProject {
-  Id: number;
+  Id?: number;
   Title: string;
   Links: IProjectLinks[];
-  UserDescription: string;
-  CreatorDescription: string;
+  UserDescription?: string;
+  CreatorDescription?: string;
   Images: string[];
   Tags: string[];
+  Url: string;
+}
+
+export interface IWriting {
+  categories: string[];
+  enclosure: any;
+  url: string;
+  title: string;
+  link: string;
+  description: string;
+  pubDate: string;
+  guid: string;
+  thumbnail: string;
 }
 
 export interface IHeadingProp {

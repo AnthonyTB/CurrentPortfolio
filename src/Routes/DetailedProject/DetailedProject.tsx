@@ -6,10 +6,10 @@ import { IProject, IProjectLinks } from "../../interfaces";
 import Carousel from "react-bootstrap/Carousel";
 import { scrollToTop } from "../../Components/ScrollToTop";
 import Return from "../../Assets/arrow.svg";
-import { Link } from "react-router-dom";
+import { Link, RouteComponentProps } from "react-router-dom";
 import { Boundary } from "../";
 
-const DetailedProject: React.FC<any> = (props: any) => {
+const DetailedProject: React.FC<RouteComponentProps> = (props: any) => {
   useEffect(() => {
     scrollToTop();
   }, []);
