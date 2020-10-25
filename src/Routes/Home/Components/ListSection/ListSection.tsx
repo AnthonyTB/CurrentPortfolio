@@ -16,6 +16,7 @@ interface IProps {
 }
 
 const ListSection: React.FC<IProps> = (props) => {
+  console.log(props);
   const [List, setList] = useState<null | IProject[] | IWriting[]>(null);
 
   const SelectMenuValue = (value: string) => {

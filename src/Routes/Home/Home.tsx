@@ -1,4 +1,4 @@
-import React, { Suspense, useContext } from "react";
+import React, { useContext } from "react";
 import { IProject, IWriting } from "../../interfaces";
 import { Projects } from "../DetailedProject/ProjectList";
 import { Hero, AboutMe } from "./Components/";
@@ -19,6 +19,7 @@ const Home: React.FC<RouteComponentProps> = () => {
         Tags.concat(Item.Tags || Item.categories)
       // @ts-ignore-end
     );
+    console.log(Tags);
 
     Tags.filter((Tag: string) => !Tags.includes(Tag));
 
@@ -30,30 +31,28 @@ const Home: React.FC<RouteComponentProps> = () => {
     SectionText1: "view my",
     SectionText2: "projects",
     SelectMenuLabel: "Projects",
-    SelectOptions: grabTags(mediumData),
+    SelectOptions: grabTags(Projects),
     List: Projects,
   };
 
-  const WritingsSection = {
-    Heading: "Writings",
-    SectionText1: "view my articles about",
-    SelectMenuLabel: "Writings",
-    SelectOptions: grabTags(Projects),
-    List: mediumData,
-  };
+  const WritingSection = () => {
+    const WritingsSection = {
+      Heading: "Writings",
+      SectionText1: "view my articles about",
+      SelectMenuLabel: "Writings",
+      SelectOptions: mediumData ? grabTags(mediumData) : [""],
+      List: mediumData,
+    };
 
-  const WritingSection = React.lazy(
-    () => import("./Components/ListSection/ListSection")
-  );
+    return <ListSection {...WritingsSection} />;
+  };
 
   return (
     <>
       <Hero />
       <AboutMe />
       <ListSection {...ProjectsSection} />
-      <Suspense fallback="Loading...">
-        <WritingSection {...WritingsSection} />
-      </Suspense>
+      <WritingSection />
     </>
   );
 };
