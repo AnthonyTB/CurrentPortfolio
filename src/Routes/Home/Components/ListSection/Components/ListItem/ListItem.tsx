@@ -9,22 +9,23 @@ interface IProps {
 }
 
 const ListItem: React.FC<IProps> = (props) => {
+  console.log(props);
   return (
-<>
-          <li
-            key={props.Title}
-            className="Project animate__animated animate__bounceInUp"
-          >
-            <Link to={props.Url}>
-              <div
-                className="Project__image"
-                style={{
-                  backgroundImage: props.ImgUrl,
-                }}
-              />
-              <h2 className="Project__heading">{props.Title}</h2>
-            </Link>
-          </li>
+    <>
+      <li
+        key={props.Title}
+        className="Work animate__animated animate__bounceInUp"
+      >
+        <Link to={props.Url}>
+          <div
+            className="Work__image"
+            style={{
+              backgroundImage: props.ImgUrl,
+            }}
+          />
+          <h2 className="Work__heading">{props.Title}</h2>
+        </Link>
+      </li>
     </>
   );
 };

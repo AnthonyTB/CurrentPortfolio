@@ -10,18 +10,15 @@ const Home: React.FC<RouteComponentProps> = () => {
   const { mediumData }: any = useContext(Context);
 
   const grabTags = (List: IProject[] | IWriting[]): string[] => {
-    const Tags: string[] = [];
-
+    const Tags: string[] = [""];
     // @ts-ignore
-    List.map(
-      (Item: IProject | IWriting) =>
-        // @ts-ignore-start
-        Tags.concat(Item.Tags || Item.categories)
-      // @ts-ignore-end
-    );
-    console.log(Tags);
-
-    Tags.filter((Tag: string) => !Tags.includes(Tag));
+    List.map((Project: IProject) => {
+      return Project.Tags.filter((Tag: string) => {
+        if (!Tags.includes(Tag)) {
+          Tags.push(Tag);
+        }
+      });
+    });
 
     return Tags;
   };

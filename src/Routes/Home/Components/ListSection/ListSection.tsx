@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ListSection.css";
 import Heading from "../Headings/Headings";
-import { IProject, IWriting } from "../../../../interfaces";
+import { IProject } from "../../../../interfaces";
 import { SelectMenu } from "../";
 import ScrollAnimation from "react-animate-on-scroll";
 import { ListItem } from "./Components/";
@@ -16,8 +16,7 @@ interface IProps {
 }
 
 const ListSection: React.FC<IProps> = (props) => {
-  console.log(props);
-  const [List, setList] = useState<null | IProject[] | IWriting[]>(null);
+  const [List, setList] = useState<any[]>([]);
 
   const SelectMenuValue = (value: string) => {
     const selectedItems: IProject[] = props.List.filter((Item: IProject) =>
@@ -28,11 +27,19 @@ const ListSection: React.FC<IProps> = (props) => {
 
   const renderList = () => {
     return (
-      // @ts-ignore-start
-      List.map((Item: IProject) => (
-        <ListItem Title={Item.Title} ImgUrl={Item.Images[0]} Url={Item.Url} />
-      ))
-      // @ts-ignore-end
+      <div className="WorkList">
+        <ul>
+          {/* @ts-ignore-start */}
+          {List.map((Item: IProject) => (
+            <ListItem
+              Title={Item.Title}
+              ImgUrl={Item.Images[0]}
+              Url={Item.Url}
+            />
+          ))}
+          {/* @ts-ignore-end */}
+        </ul>
+      </div>
     );
   };
 
@@ -44,15 +51,15 @@ const ListSection: React.FC<IProps> = (props) => {
       delay={1}
     >
       <section className="Work">
-        <Heading {...props.Heading} />
+        <Heading Heading={props.Heading} />
         <div className="container">
           <h3>
-            {props.SectionText1}
+            {props.SectionText1}{" "}
             <SelectMenu
               Label={props.SelectMenuLabel}
               MenuOptions={props.SelectOptions}
               ValueUpdater={SelectMenuValue}
-            />
+            />{" "}
             {props?.SectionText2}
           </h3>
           {List ? renderList() : ""}
