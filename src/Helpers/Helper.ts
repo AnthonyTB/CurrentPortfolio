@@ -13,12 +13,13 @@ export const Helpers = {
         ? res.json().then((err) => Promise.reject(err))
         : res.json().then((json) => {
             const StructuredResponse: any[] = [];
+            console.log(json);
             json.items.map((Writing: IWriting) =>
               StructuredResponse.push({
                 Title: Writing.title,
                 Images: [Writing.thumbnail],
                 Tags: Writing.categories,
-                Url: Writing.url,
+                Url: Writing.link,
               })
             );
 

@@ -16,7 +16,7 @@
 }
 
 .WorkList ul .Work {
-  background: rgb(46, 46, 46);
+  background: #2e2e2e;
   display: flex;
   flex-direction: column;
   border: 0;

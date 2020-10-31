@@ -50,7 +50,7 @@ const ListSection: React.FC<IProps> = (props) => {
       duration={1.5}
       delay={1}
     >
-      <section className="Work">
+      <section className="WorkSection">
         <Heading Heading={props.Heading} />
         <div className="container">
           <h3>
