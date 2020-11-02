@@ -1,11 +1,11 @@
-import React from 'react';
-import './Footer.css';
-import AnthonySig from '../../Assets/Anthony.png';
+import React from "react";
+import "./Footer.css";
+import AnthonySig from "../../Assets/Anthony.png";
 
-const Footer: React.FC<any> = () => {
+const Footer: React.FC = () => {
   return (
     <footer>
-      <img src={AnthonySig} alt='Signature' />
+      <img src={AnthonySig} alt="Signature" />
     </footer>
   );
 };
