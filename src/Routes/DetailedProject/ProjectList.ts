@@ -80,7 +80,11 @@ export const Projects: IProject[] = [
     Id: 4,
     Title: "Rogue",
     Links: [
-      { Link: "https://rogue.live/", Title: "Live", Icon: "fas fa-tv" },
+      {
+        Link: "https://rogue.vercel.app/",
+        Title: "Live",
+        Icon: "fas fa-tv",
+      },
       {
         Link: "https://github.com/AnthonyTB/Rogue",
         Title: "Repo",
