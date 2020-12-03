@@ -143,7 +143,7 @@ export const Projects: IProject[] = [
       "https://i.gyazo.com/22e739667101551f9641e1de1f842510.png",
       "https://i.gyazo.com/51f11b67aebab80b19cd0959e51c1e6e.png",
     ],
-    Url: "/project/Meta-Threads-Web-Scrapper",
+    Url: "/project/Meta-Threads-Web-Scraper",
     Tags: ["Personal", "NodeJS", "Web Scraping"],
   },
 ];
