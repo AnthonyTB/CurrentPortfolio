@@ -20,6 +20,7 @@ const AboutMe: React.FC<any> = () => {
     <ScrollAnimation
       animateIn="fadeIn"
       animateOut="fadeOut"
+      animateOnce={true}
       duration={1.5}
       delay={1}
     >

@@ -8,11 +8,11 @@
 }
 
 .MuiInput-underline:before {
-  border-bottom: 1px solid #2e2e2e !important;
+  border-bottom: 1px solid #fff !important;
 }
 
 .MuiSvgIcon-root {
-  fill: #2e2e2e !important;
+  fill: #fff !important;
 }
 
 .makeStyles-formControl-3 {
@@ -41,13 +41,4 @@
   .MuiInputBase-root {
     font-size: 35px !important;
   }
-}
-
-@media screen and (min-device-width: 1200px) {
-}
-
-@media screen and (min-device-width: 1500px) {
-}
-
-@media screen and (min-device-width: 1800px) {
 }
