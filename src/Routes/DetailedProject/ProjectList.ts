@@ -3,34 +3,6 @@ import { IProject } from "../../interfaces";
 export const Projects: IProject[] = [
   {
     Id: 1,
-    Title: "Smart Marketplace",
-    Links: [
-      {
-        Link: "https://smartmarketplace.app/",
-        Title: "Live",
-        Icon: "fas fa-tv",
-      },
-      {
-        Link: "https://github.com/thinkful-ei-iguana/Anthony-FirstCapstone",
-        Title: "Repo",
-        Icon: "fab fa-github",
-      },
-    ],
-    UserDescription: `Smart Marketplace users have the ability to shop other users’ active listings or create listings of their own. Users have the ability to make changes to their own active listings. Ech user also has a Profile that showcases all of their active listings.`,
-    CreatorDescription: `Starting with the front end of the app. I broke down each route into separate components. Then utilized dynamic react-router props to see which item or profile data I needed to display. Then styled the app in a mobile-first design scheme. Now onto the back end, I created a NodeJS API using expressJS's router for my endpoints. I also did all my password hashing and decrypting within my API. Finally, I made sure all the post endpoints data was serialized before being stored in the database to prevent XSS attacks.`,
-    Images: [
-      "https://i.gyazo.com/e58688f3515ac233467baf5900b3ecc4.png",
-      "https://i.gyazo.com/e4a32b6f094d9cb9ce8732e89779a504.png",
-      "https://i.gyazo.com/567a97e1e50f3b15d82356293e4a4101.png",
-      "https://i.gyazo.com/4f62d794eaf9bc3cc50865907315c9a2.png",
-      "https://i.gyazo.com/060f4642ae8741fca6d5023778fe3731.png",
-      "https://i.gyazo.com/f0696bc437ae778f12655adbb5d0291a.png",
-    ],
-    Url: "/project/Smart-Marketplace",
-    Tags: ["School", "React", "NodeJS", "PostgreSQL"],
-  },
-  {
-    Id: 2,
     Title: "Lyric Hunter",
     Links: [
       {
@@ -55,7 +27,7 @@ export const Projects: IProject[] = [
     Tags: ["School", "React"],
   },
   {
-    Id: 3,
+    Id: 2,
     Title: "Code Ninjas",
     Links: [
       { Link: "https://code-ninjas.now.sh/", Title: "Live", Icon: "fas fa-tv" },
@@ -77,7 +49,7 @@ export const Projects: IProject[] = [
     Tags: ["Personal", "React", "NodeJS", "PostgreSQL"],
   },
   {
-    Id: 4,
+    Id: 3,
     Title: "Rogue",
     Links: [
       {
@@ -102,7 +74,7 @@ export const Projects: IProject[] = [
     Tags: ["Personal", "React"],
   },
   {
-    Id: 5,
+    Id: 4,
     Title: "PVPX",
     Links: [
       { Link: "https://pvpx.live/", Title: "Live", Icon: "fas fa-tv" },
@@ -123,7 +95,7 @@ export const Projects: IProject[] = [
     Tags: ["Personal", "React"],
   },
   {
-    Id: 6,
+    Id: 5,
     Title: "Meta Threads Web Scraper",
     Links: [
       {
