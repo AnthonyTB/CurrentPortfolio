@@ -1,13 +1,5 @@
 import { IProject } from "../../interfaces";
 
-curl -X GET "https://graph.facebook.com/oauth/access_token
-  ?client_id=242469736893350
-  &client_secret=0e31049681afa45f6beb41ab35ec79a9
-  &grant_type=client_credentials"
-
-  curl -i -X GET \
- "https://graph.facebook.com/v3.2/8676622961?fields=business_discovery.username(anthony.bosticc){followers_count}&access_token={242469736893350|UNct8uGpQusAilE-NGUoxylIKYc}"
-
 export const Projects: IProject[] = [
   {
     Id: 1,
@@ -38,7 +30,11 @@ export const Projects: IProject[] = [
     Id: 2,
     Title: "Code Ninjas",
     Links: [
-      { Link: "https://cn-activitymanager.vercel.app/", Title: "Live", Icon: "fas fa-tv" },
+      {
+        Link: "https://cn-activitymanager.vercel.app/",
+        Title: "Live",
+        Icon: "fas fa-tv",
+      },
       {
         Link: "https://github.com/AnthonyTB/CN-ActivityManager",
         Title: "Repo",
